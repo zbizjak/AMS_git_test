@@ -53,6 +53,14 @@ git push -u origin master
 ### Dodatek - Uporaba ECHO
 https://runcloud.io/blog/echo-command-in-linux
 
+### Dodatek - fatal: Authentication failed for 
+
+
+1. Pojdite v nastavitve svojega GitHub profila.
+2. Izberite razdelek "Developer" in odprite "Personal Access Token".
+3. Ustvarite nov dostopni žeton (kopirajte ga takoj, ko je ustvarjen).
+4. Poskusite narediti "push" sprememb v svojem repozitoriju; pozvani boste, da vnesete uporabniško ime in geslo.
+5. Kot geslo prilepite dostopni žeton, ki ste ga pravkar kopirali.
 
 ## Naloga 3: Naredite spremembo in jo potisnite
 ### Navodila:
@@ -77,8 +85,9 @@ git push
 
 ### Rešitev:
 ```sh
-echo "node_modules/" > .gitignore
-echo "*.log" >> .gitignore
+echo "venv/" > .gitignore
+echo "*.dcm" >> .gitignore
+echo "*.obj" >> .gitignore
 git add .gitignore
 git commit -m "Dodana datoteka .gitignore"
 git push
